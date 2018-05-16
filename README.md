@@ -42,5 +42,6 @@ I used the MySQL DBMS and the Linux operating system and the PHP programming lan
 
 ## Pic:
     landing page slide show image
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=9itAJ-hcCq4E" target="_blank"><img src="http://img.youtube.com/vi/9itAJ-hcCq4EE/0.jpg"  alt="Demo" width="240" height="180" border="10" /></a>
+    
+## YouTube Videos:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=9itAJ-hcCq4E" target="_blank"><img src="resource/demo.png"  alt="Demo" width="240" height="180" border="10" /></a>
