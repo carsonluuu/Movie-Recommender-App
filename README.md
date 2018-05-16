@@ -4,6 +4,9 @@ The project is to build a Web site on movies, actors and their reviews, supporte
 
 I used the MySQL DBMS and the Linux operating system and the PHP programming language to access MySQL and the Apache2 Web server to provide a Web interface. Apache and PHP is one of the most popular method these days to implement a database-backed server for a small-to-medium scale Web site.
 
+## YouTube Videos:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=9itAJ-hcCq4E" target="_blank"><img src="resource/Demo.png"  alt="Demo" width="960" height="500" border="10" /></a>
+
 ## MySQL
     create.sql and load.sql
 
@@ -43,5 +46,4 @@ I used the MySQL DBMS and the Linux operating system and the PHP programming lan
 ## Pic:
     landing page slide show image
     
-## YouTube Videos:
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=9itAJ-hcCq4E" target="_blank"><img src="resource/demo.png"  alt="Demo" width="240" height="180" border="10" /></a>
+
