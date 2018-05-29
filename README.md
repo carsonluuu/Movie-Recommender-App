@@ -37,7 +37,7 @@ I preprocessed the original dataset in two steps:
 
 ```
 cd src
-cd RecommenderSystem # 进入解压出的目录
+cd RecommenderSystem 
 hdfs dfs -mkdir /input
 hdfs dfs -put input/* /input 
 hdfs dfs -rm -r /dataDividedByUser
