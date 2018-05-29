@@ -41,12 +41,22 @@ I preprocessed the original dataset in two steps:
 
 ## How to run
 
-I created a hadoop cluster on Amazon Elastic MapReduce, which has 6 nodes, and ran my program on it.
 
 ```
-$hadoop com.sun.tools.javac.Main *.java
-$jar cf recommender.jar *.class
-$hadoop jar recommender.jar Driver /input /dataDividedByUser /coOccurrenceMatrix /normalizedMatrix /multiplicationMapperJoin /multiplicationSum /recommender
+cd src
+cd RecommenderSystem # 进入解压出的目录
+hdfs dfs -mkdir /input
+hdfs dfs -put input/* /input 
+hdfs dfs -rm -r /dataDividedByUser
+hdfs dfs -rm -r /coOccurrenceMatrix
+hdfs dfs -rm -r /Normalize
+hdfs dfs -rm -r /Multiplication
+hdfs dfs -rm -r /Sum
+cd src/main/java/
+hadoop com.sun.tools.javac.Main *.java
+jar cf recommender.jar *.class
+hadoop jar recommender.jar Driver /input /dataDividedByUser /coOccurrenceMatrix /Normalize /Multiplication /Sum
+hdfs dfs -cat /Sum/*
 ```
 
 * args0: original dataset
@@ -74,8 +84,7 @@ I used the MySQL DBMS and the Linux operating system and the PHP programming lan
 
 ## Input pages:
 	page_l1.php: A page that lets users to add actor and/or director information. Here are some name examples: X.M.L Smith, J'son Lee, etc.
-	page_l2.php: A page that lets users to add movie information.
-	Some name examples: Beware the BLOB -- A Sequel, Willy Wonka and the Chocolate Factory
+	page_l2.php: A page that lets users to add movie information. Some name examples: Beware the BLOB -- A Sequel, Willy Wonka and the Chocolate Factory
 	page_l3.php: A page that lets users to add "actor to movie" relation(s). i.e. Ryan Rosario stars in Alice in Wonderland (as the Madhatter, of course!)
 	page_l4.php: A page that lets users to add "director to movie" relation(s). i.e. Johnny Depp directs Alice in Wonderland
 
