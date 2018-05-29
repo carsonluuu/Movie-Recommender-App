@@ -1,12 +1,5 @@
 # Movie Recommender System
 
-## Overview
-In this project, I built a movie recommender system based on Item Collaborative Filtering using Hadoop MapReduce in Java.
-
-
-## Data
-Data comes from the training dataset of Netflix Prize Challenge. The following is the information from its README.
-
 #### Training dataset file description
 
 The file "training_set.tar" is a tar of a directory containing 17770 files, one
