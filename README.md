@@ -1,5 +1,7 @@
 # Movie Recommender System
 
+## Introduction
+
 #### Training dataset file description
 
 The file "training_set.tar" is a tar of a directory containing 17770 files, one
