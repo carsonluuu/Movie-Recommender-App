@@ -36,7 +36,6 @@ I preprocessed the original dataset in two steps:
 
 ## How to run
 
-
 ```
 cd src
 cd RecommenderSystem 
